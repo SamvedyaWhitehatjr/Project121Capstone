@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Real Time Image Identification App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" type="text/css" href="style.css">">
+    </head>
+    <body>
+        <center>
+            <p>Case study between google lens and mobilenet</p>
+            <span class="google_lens">Google Lens<img src="https://www.bing.com/th?id=Ad4c93f2425bde88c5133a1081ee67f19&w=110&h=110&c=7&rs=1&qlt=80&o=6&dpr=1.5&pid=SANGAM" class="img_responsive"></span>
+            <p>vs</p>
+            <p id="mobilenet" class="mobilenet btn-primary">mobilenet</p>
+            <hr>
+            <ol>
+                <div class="test_image_and_result1 col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                <b class="Brown1">Test Image - </b>
+                <img src="Brown1.jpg" class="img">
+                </li>
+                <h5 class="first col-sm-4 col-xs-12">
+                    Output on <b>Google lens</b> - Brown bear in bread
+                    <span></span>
+                </h5>
+                <h5 class="second col-sm-4 col-xs-12">
+                    Output on <b>mobilenet model</b> - Bear Painting
+                    <span></span>
+                </h5>
+                <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4>Google lens is more accurate</h4>
+                </div>
+                </div>
+                <div class="test_image_and_result1 col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                    <b class="Brown1">Test Image - </b>
+                    <img src="Brown2.jpeg" class="img">
+                    </li>
+                    <h5 class="first col-sm-4 col-xs-12">
+                        Output on <b>Google lens</b> - Calligraphy
+                        <span></span>
+                    </h5>
+                    <h5 class="second col-sm-4 col-xs-12">
+                        Output on <b>mobilenet model</b> - fall season
+                        <span></span>
+                    </h5>
+                    <div class="mini_result" class="col-xs-12">
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google lens is more accurate</h4>
+                    </div>
+                    </div>
+                    <div class="test_image_and_result1 col-xs-12">
+                        <li class="col-sm-4 col-xs-12">
+                        <b class="Brown1">Test Image - </b>
+                        <img src="brown3.jpeg" class="img">
+                        </li>
+                        <h5 class="first col-sm-4 col-xs-12">
+                            Output on <b>Google lens</b> - Bear heart
+                            <span></span>
+                        </h5>
+                        <h5 class="second col-sm-4 col-xs-12">
+                            Output on <b>mobilenet model</b> - Bear
+                            <span></span>
+                        </h5>
+                        <div class="mini_result" class="col-xs-12">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Google lens is more accurate</h4>
+                        </div>
+                        </div>
+                        <div class="test_image_and_result1 col-xs-12">
+                            <li class="col-sm-4 col-xs-12">
+                            <b class="Brown1">Test Image - </b>
+                            <img src="wer.jpg" class="img">
+                            </li>
+                            <h5 class="first col-sm-4 col-xs-12">
+                                Output on <b>Google lens</b> - 3 Bears
+                                <span></span>
+                            </h5>
+                            <h5 class="second col-sm-4 col-xs-12">
+                                Output on <b>mobilenet model</b> - Marshmallows
+                                <span></span>
+                            </h5>
+                            <div class="mini_result" class="col-xs-12">
+                            <h4>Result - </h4>
+                            <hr>
+                            <h4>Google lens is more accurate</h4>
+                            </div>
+                            </div>
+            </ol>
+            <h6 class="bottom1">
+                I have tested 4 Images <b>Google lens</b> Has predicted all 4 of them more accurately than <b>Mobilenet model</b> and was also less accurately, So according to my Case Study <b>Google lens is more accurate than Mobilenet model</b>
+            </h6>
+        </center>
+    </body>
+</html>
